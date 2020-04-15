@@ -13,9 +13,9 @@ def selection_sort(arr):
                 smallest_index = iX
 
         # TO-DO: swap
-        tempItem = arr[cur_index]
-        arr[cur_index] = arr[smallest_index]
-        arr[smallest_index] = tempItem
+        # tempItem = arr[cur_index]
+        arr[cur_index], arr[smallest_index] = arr[smallest_index], arr[cur_index]
+        # arr[smallest_index] = tempItem
 
     return arr
 
